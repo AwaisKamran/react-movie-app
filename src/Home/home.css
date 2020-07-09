@@ -1,0 +1,23 @@
+.movie-poster-slider{
+    height:500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.movie-slider{
+    position: relative;
+}
+
+.movie-slider > .slick-slider > .slick-dots{
+    position: absolute;
+    bottom: 15px;
+}
+
+.slick-dots li button:before{
+    color: #f5f2f2;
+}
+
+.slick-dots li.slick-active button:before{
+    color: white;
+}

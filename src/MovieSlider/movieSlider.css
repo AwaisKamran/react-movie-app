@@ -1,0 +1,36 @@
+.movie-poster-slider{
+    overflow-x: hidden;
+}
+
+.movie-poster-slider .movie-title{
+    color: white;
+    font-size: 32px;
+}
+
+.movie-poster-slider .movie-details{
+    color: white;
+    font-size: 24px;
+}
+
+.movie-details-margin{
+    margin-top: 12%;
+}
+
+.movie-details-inner-container{
+    background-color: #343a40;
+    width: max-content;
+    padding: 10px;
+    padding-right: 4px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px) {
+    .movie-details-inner-container{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .movie-details-margin{
+        padding-left: 0px !important;
+    }
+  }

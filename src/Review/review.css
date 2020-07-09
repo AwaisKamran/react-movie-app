@@ -1,0 +1,42 @@
+.review-container{
+    margin-bottom: 20px;
+}
+
+.review-movie-image{
+    width: 175px;
+    height: 175px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+
+.review-details-movie-name{
+    font-size: 17.5px;
+    cursor: pointer;
+}
+
+.review-details-movie-year{
+    font-size: 14.5px;
+}
+
+.review-details-text{
+    font-size: 14.5px;
+}
+
+.review-user-name{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.review-details-likes{
+    cursor: pointer;
+    width: max-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #1c1c94;
+    border-radius: 10px;
+}
