@@ -1,5 +1,5 @@
 import React from 'react';
-import Search from '../Search';
+import SearchMovies from '../Search';
 import Home from '../Home';
 import Login from '../Login';
 import logo from '../logo.png';
@@ -38,7 +38,7 @@ function Header() {
 
             <Switch>
                 <Route path="/searchmovies">
-                    <Search />
+                    <SearchMovies />
                 </Route>
                 <Route path="/signin">
                     <Login />

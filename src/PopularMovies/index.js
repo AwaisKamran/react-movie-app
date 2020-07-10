@@ -1,13 +1,16 @@
 import React from 'react';
 import Slider from "react-slick";
 import axios from 'axios';
-import './popularMovies.css';
 import MovieCard from '../MovieCard';
-import { ThunderboltFilled } from '@ant-design/icons';
+import './popularMovies.css';
 
 class PopularMovies extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {
+            moviesData: []
+        };
 
         this.settings = {
             dots: false,
@@ -60,38 +63,26 @@ class PopularMovies extends React.Component {
         axios.get(`${this.apiLink}/movie/popular?api_key=${this.apiKey}&language=${this.apiResponseLanguage}&page=1`)
             .then(res => res.data)
             .then(res => {
-                this.setState({ movieData: res });
+                this.setState({ moviesData: res.results.slice(0,6) });
             });
     }
 
     render() {
-        return <div class="container">
-            <span class="title lato lato-300">
+        return <div className="container">
+            <span className="title lato lato-300">
                 <span>Popular Movies</span>
             </span>
 
-            <div>
-                <Slider {...this.settings}>
-                    <div>
-                        <MovieCard />
-                    </div>
-                    <div>
-                        <MovieCard />
-                    </div>
-                    <div>
-                        <MovieCard />
-                    </div>
-                    <div>
-                        <MovieCard />
-                    </div>
-                    <div>
-                        <MovieCard />
-                    </div>
-                    <div>
-                        <MovieCard />
-                    </div>
-                </Slider>
-            </div>
+            {       
+                this.state.moviesData.length > 0 ? 
+                <div>
+                    <Slider {...this.settings}>
+                    { 
+                        this.state.moviesData.map((movie)=><div><MovieCard {...movie} /></div>)
+                    }   
+                    </Slider>
+                </div>: null
+            }
         </div>;
     }
 }

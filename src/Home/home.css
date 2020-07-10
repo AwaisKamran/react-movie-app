@@ -1,5 +1,7 @@
 .movie-poster-slider{
-    height:500px;
+    width:100%;
+    overflow-x: hidden;
+    height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

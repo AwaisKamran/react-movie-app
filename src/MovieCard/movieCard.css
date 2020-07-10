@@ -1,5 +1,8 @@
 .movie-card-container{
+    width: 195px;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .movie-card-container:hover .overlay{
@@ -14,6 +17,8 @@
     cursor: pointer;
     width: 195px;
     height: 260px;
+    margin-left: auto;
+    margin-right: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

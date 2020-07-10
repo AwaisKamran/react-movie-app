@@ -1,0 +1,13 @@
+.searchContainer{
+    padding: 14px
+}
+
+.center-block{
+    transition: ease-in;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-max-content{
+    width: max-content;
+}

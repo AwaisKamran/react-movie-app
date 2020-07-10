@@ -1,36 +1,64 @@
-.movie-poster-slider{
-    overflow-x: hidden;
-}
+    .movie-poster-slider .movie-title{
+        color: white;
+        font-size: 32px;
+    }
 
-.movie-poster-slider .movie-title{
-    color: white;
-    font-size: 32px;
-}
-
-.movie-poster-slider .movie-details{
-    color: white;
-    font-size: 24px;
-}
-
-.movie-details-margin{
-    margin-top: 12%;
-}
-
-.movie-details-inner-container{
-    background-color: #343a40;
-    width: max-content;
-    padding: 10px;
-    padding-right: 4px;
-    opacity: 0.8;
-}
-
-@media only screen and (max-width: 600px) {
-    .movie-details-inner-container{
-      margin-left: auto;
-      margin-right: auto;
+    .movie-poster-slider .movie-details{
+        color: white;
+        font-size: 24px;
     }
 
     .movie-details-margin{
-        padding-left: 0px !important;
+        margin-top: 12%;
     }
+
+    .movie-details-inner-container{
+        background-color: #343a40;
+        width: max-content;
+        padding: 10px;
+        padding-right: 4px;
+        opacity: 0.8;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .movie-details-inner-container{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .movie-details-margin{
+            padding-left: 0px !important;
+        }
+
+        .mini-tile-sm{
+            display: none;
+        }
+    }
+
+    
+    @media only screen and (max-width: 800px) {
+        .mini-tile-sm{
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .mini-tile-sm{
+            display: none;
+        }
+    }
+
+  .mini-tile{
+      background-size: bottom;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 190px;
+      width: 100%;
+      border-radius: 4px;
+      padding: 0px;
+  }
+
+  .popular-reviews-section{
+      margin-left: auto;
+      margin-right: auto;
   }
