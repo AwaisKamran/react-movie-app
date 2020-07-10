@@ -3,7 +3,7 @@ import './movieCard.css';
 import { StarFilled } from "@ant-design/icons";
 import placeholder from '../images/placeholder.jpg';
 
-function MovieCard({ title, release_date, genre_ids, poster_path, backdrop_path }) {
+function MovieCard({ title, release_date, genre_ids, poster_path, backdrop_path, first_air_date, name, type=1 }) {
     return (
         <div className="mb-4 movie-card-container">
             <div className="movie-card-image" style={{ backgroundImage: `url(${process.env.REACT_APP_TMDB_IMAGE_LINK}${poster_path}), url(${placeholder})`}}>
@@ -14,8 +14,8 @@ function MovieCard({ title, release_date, genre_ids, poster_path, backdrop_path 
                     </div>
                 </div>
             </div>
-            <div className="movie-card-details lato lato-400 color-light-gray mt-1">{ new Date(release_date).getFullYear() }, Action, 1h 30 min</div>
-            <div className="movie-card-name lato lato-400 color-white">{title}</div>
+            <div className="movie-card-details lato lato-400 color-light-gray mt-1">{ type === 1? new Date(release_date).getFullYear(): new Date(first_air_date).getFullYear() }, Action, 1h 30 min</div>
+            <div className="movie-card-name lato lato-400 color-white">{ type === 1? title: name}</div>
         </div>
     );
 }

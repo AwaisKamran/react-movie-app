@@ -189,3 +189,39 @@ code {
 .ant-select-arrow{
   color: white !important;
 }
+
+.ant-radio-wrapper span{
+  color: white;
+}
+
+.ant-radio-inner{
+  border-color: #FF0040;
+}
+
+.ant-radio-checked .ant-radio-inner{
+  border-color: #FF0040;
+}
+
+.ant-radio-checked::after{
+  border-color: #FF0040 !important;
+}
+
+.ant-radio-inner::after{ 
+  background-color: #FF0040 !important;
+}
+
+.ant-radio-wrapper:hover .ant-radio, .ant-radio:hover {
+  border-color: #FF0040 !important;
+}
+
+.ant-radio:hover .ant-radio-inner{
+  border-color: #FF0040 !important;
+}
+
+.ant-radio-input:focus + .ant-radio-inner{
+  border-color: #FF0040 !important;
+}
+
+.ant-modal-content{
+  background-color: #343a40;
+}

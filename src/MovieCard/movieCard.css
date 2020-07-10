@@ -47,3 +47,18 @@
 .text-highlight > .anticon{
     top: -8px !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .movie-card-container{
+        width: 235px !important;
+    }
+
+    .movie-card-container > .movie-card-image{
+        width: 235px !important;
+        height: 345px !important;
+    }
+
+    .overlay{
+        height: 345px !important;
+    }
+}

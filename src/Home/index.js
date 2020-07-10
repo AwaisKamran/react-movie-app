@@ -8,7 +8,7 @@ function Home() {
       return (
         <div className="movie-slider">
             <MovieSlider></MovieSlider>
-            <PopularMovies></PopularMovies><br/>
+            <PopularMovies></PopularMovies>
             <PopularReviews></PopularReviews><br/>
         </div>
     );
