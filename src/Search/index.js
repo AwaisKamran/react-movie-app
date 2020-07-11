@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import MovieCard from '../MovieCard';
 import { Input, Pagination, Spin, Result, Button } from "antd";

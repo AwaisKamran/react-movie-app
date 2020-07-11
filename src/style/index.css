@@ -225,3 +225,11 @@ code {
 .ant-modal-content{
   background-color: #343a40;
 }
+
+.ant-notification-notice-message{
+  margin-left: 10px !important;
+}
+
+.ant-notification-notice-description{
+  margin-left: 4px !important;
+}

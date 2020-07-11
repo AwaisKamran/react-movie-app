@@ -2,6 +2,7 @@ import React from 'react';
 import SearchMovies from '../Search';
 import Home from '../Home';
 import Login from '../Login';
+import Register from '../Register';
 import logo from '../logo.png';
 import { Nav, Navbar } from 'react-bootstrap';
 import {
@@ -29,7 +30,7 @@ function Header() {
                                 <Link className="link" to="/searchmovies">Search Movies</Link>
                             </Nav>
                             <Nav>
-                                <Link className="link" to="/signin">Sign In</Link>
+                                <Link className="link" to="/login">Login</Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -40,8 +41,11 @@ function Header() {
                 <Route path="/searchmovies">
                     <SearchMovies />
                 </Route>
-                <Route path="/signin">
+                <Route path="/login">
                     <Login />
+                </Route>
+                <Route path="/register">
+                    <Register />
                 </Route>
                 <Route path="/">
                     <Home />
