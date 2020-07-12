@@ -3,6 +3,8 @@ import SearchMovies from '../Search';
 import Home from '../Home';
 import Login from '../Login';
 import Register from '../Register';
+import MovieDetail from '../MovieDetail';
+import TvDetail from '../TvDetail';
 import logo from '../logo.png';
 import { Nav, Navbar } from 'react-bootstrap';
 import {
@@ -47,6 +49,8 @@ function Header() {
                 <Route path="/register">
                     <Register />
                 </Route>
+                <Route path="/movieDetail/:id" component={MovieDetail}></Route>
+                <Route path="/tvDetail/:id" component={TvDetail}></Route>
                 <Route path="/">
                     <Home />
                 </Route>

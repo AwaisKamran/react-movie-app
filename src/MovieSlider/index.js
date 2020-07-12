@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import axios from 'axios';
+import { Link } from "react-router-dom";
 import './movieSlider.css';
 import { Button, Modal } from 'antd';
 import { PlayCircleOutlined, PlusOutlined } from '@ant-design/icons';
@@ -66,7 +67,8 @@ class MovieSlider extends React.Component {
                             this.state.moviesData.map((movie) => {
                                 return (
                                     <div class="placement-style">
-                                        <div className="movie-poster-slider" style={{ backgroundImage: `url(${process.env.REACT_APP_TMDB_POSTER_LINK}${movie.backdrop_path})` }}>
+                                        <Link to={`movieDetail/${movie.id}`}>
+                                            <div className="movie-poster-slider" style={{ backgroundImage: `url(${process.env.REACT_APP_TMDB_POSTER_LINK}${movie.backdrop_path})` }}>
                                             <div class="row">
                                                 <div class="animate__animated animate__fadeInLeft pl-5 movie-details-margin col-lg-6">
                                                     <div class="movie-details-inner-container">
@@ -101,6 +103,7 @@ class MovieSlider extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
+                                        </Link>
                                     </div>
                                 );
                             })
